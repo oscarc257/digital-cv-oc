@@ -1,4 +1,10 @@
 /* Code to style the entire document, including background. */
+/* Border box was applied to all elements */
+*{
+    box-sizing: border-box;
+}
+
+/* Body was updated with a padding, margin and border. */
 body{
     background: radial-gradient(circle, rgba(200,173,46,1) 0%, rgba(103,103,103,1) 50%, rgba(180,177,158,1) 69%);
     font-family:  "Kotta One",'Times New Roman', Times, serif; /*font family selected for structure a legibility across different systems.  */
@@ -6,47 +12,43 @@ body{
     font-weight: 300;
     line-height: 2;
     color: black;
+    padding: 2rem;
+    margin: 2rem;
+    border: 2px solid rgba(200,173,46,1);
 }
 
 /* Styling added to emphasize the main heading. */
 h1{
     font-family: "Lucida Console", Courier, monospace;
     font-size: 2.5rem;  /* Added a larger font size to emphasize heading from rest of elements */
-    text-align: center;
-    line-height: 1;
-    text-transform: capitalize;
-    text-shadow: 5px 5px 5px azure;
-
+    text-align: center; /*Aligns the main heading to the center.*/
+    line-height: 1; /*Allows space between lines*/
+    text-transform: uppercase; /*capitalizes the text.*/
+    text-shadow: 5px 5px 5px azure; /*Adds a shadow to the text.*/
 }
 
 /* Stylying added to sub headings. */
 h2{
-    font-size: 2.0rem;
-    font-weight: bold;
-    text-decoration: underline dashed;
+    font-size: 2.0rem; /*Sets a decent font size for kthe sub header*/
+    font-weight: bold; /* Makes tesxt bold to make stand out a bit more*/
+    text-decoration: underline dashed lightgoldenrodyellow; /* Adds underline dashed for more prominence*/
+    text-align: center;
 
 
 }
 
 /* Styling added to other sub headings */
 h3{
-    font-size: 1.6rem;
+    font-size: 1.6rem; /*A size to make less prominent then h2, but more than p.*/ 
 }
 
-/* Styling added to paragraphs */
-p{
-    font-size: 1.2rem;
+/*Applied padding below headers for spacing*/
+h1, h2, h3{
+    padding-bottom: 1rem;
 }
 
-/* Styling added to lists. */
-li{
-
-    font-size: 1.2rem;
-}
-
-/* Styling added to tables text. */
-table{
-
+/* Styling and size added to the elements bellow. */
+p, li, table, form{
     font-size: 1.2rem;
 }
 
@@ -55,13 +57,6 @@ th{
 }
 
 
-/* Styling added to forms text. */
-form{
-
-    font-size: 1.2rem;
-
-}
-
 /* Removed underline and added styling to text. */
 a{
     text-decoration: none;
@@ -69,3 +64,69 @@ a{
     color: azure;
 }
 
+/*Makes copyright move to center*/
+footer h5{
+    text-align: center;
+}
+
+#profile{
+    height: 10rem;
+    width: 10rem;
+    margin: auto;
+    margin-top: 10vh;
+    padding-bottom: 30px; 
+
+}
+
+#profile img{
+    height: 180px;
+    width: 150px;
+    border-radius: 100%;
+    border: 3px solid lightgray;
+    box-shadow: 1px 1px 10px 2px lightgray;
+}
+
+main section,
+footer section
+{
+  margin: 4rem 0;
+  border-top: 2px solid lightgray;
+}
+
+/* Adjust form elements to capture same look and feel. */
+form input,
+form textarea,
+form select
+{
+  padding: 0.1rem 0.2rem;
+  color: black;
+  border: 2px dotted lightgray;
+  background-color: lightgray;
+  box-shadow: 1px 1px 10px 2px lightgray
+}
+
+
+form button
+{
+  padding: 0.5rem 1rem;
+  color: black;
+  border: 2px solid lightgray;
+
+  
+}
+
+/* Remove outlines from form elements, ensuring a cleaner look. */
+form input,
+form textarea
+{
+  outline: none;
+}
+ 
+/* Adds box sizing including: border and box shadow to hobbies imag.*/
+#hobby img{
+    height: 150px;
+    width: 200px;
+    border-radius: 5%;
+    border: 3px solid lightgray;
+    box-shadow: 1px 1px 10px 2px lightgray;
+}
