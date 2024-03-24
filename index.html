@@ -9,24 +9,26 @@
 
     <body>
         <header>
-            <!-- Heading in corporates the title of document and outputs profile picture image, full name, and contact info. -->
+            <!-- Heading incorporates the title of document and outputs profile picture image, full name, and contact info. -->
             <section>
-                <img src="images/Selfie.png.png" height="200" alt="Profile picture">
             <h1>Oscar Carrillo <br>
-                <p>Software Developer Student</p>
+                <p>Software Developer</p>
             </h1>
-                <p>📧<a href="">oscar.carrillo758@gmail.com</a></p> 
+            <div id="profile">
+                <img src="images/Selfie.png" height="200" alt="Profile picture">
+            </div>
+                
+                <p>📧<a href="mailto:oscar.carrillo758@gmail.com">oscar.carrillo758@gmail.com</a></p> 
                 <p> 📱 (323) 395-7512</p>
             </section>  
         </header>
-
+        
         <main>   
             <!-- Divided body into sections of CV. -->
             <section>
-            <!-- Explaining objective as an aspiring software developer. -->
-            <h2>Summary</h2>
+            <!-- About Me-->
+            <h2>About Me</h2>
         
-            <hr>
                 <p>After working in an administration role in Human Resources, looking to change careers into a software developer role. 
                 Currently working on establishing on demand tech skills with Springboards Engeneering Career Track. 
                 Looking to apply my skills and knowledge in a a role that is both challeging and rewarding.</p> 
@@ -35,20 +37,20 @@
             <section>
             <!-- Imputted "h2" and unordered lists to explain education accomplishments. -->
             <h2>Education</h2>
-            <hr>
+            
                 <ul>
-                    <li>Springboard - Software Engeneering Career Track (March 2024 - current)</li>
-                    <li>Udemy Online Self Learning Courses - (January 2023 - December 2023)</li>
-                    <li>El Camino College - Promineo Tech Bootcamp (August 2022 - January 2023)</li>
-                    <li>Cal State Los Angeles - Bachelors of Arts in Sociology (September 2015 - June 2019)</li>
+                    <li><strong>Springboard - Software Engeneering Career Track</strong> (March 2024 - current)</li>
+                    <li><strong>Online Self Learning Courses</strong> - (January 2023 - December 2023)</li>
+                    <li><strong>El Camino College - Promineo Tech Bootcamp</strong> (August 2022 - January 2023)</li>
+                    <li><strong>Cal State Los Angeles - Bachelors of Arts in Sociology</strong> (September 2015 - June 2019)</li>
                 </ul>
             </section> 
-
+            
             <section>
             <h2>Core Qualifications/Skills</h2>
-            <hr>
+            
             <div> 
-                <!-- Other Computer Skills -->
+                <!-- Computer Skills -->
                 <h3>Computer Skills</h3>
                     <ul>
                         <li>MS Office Proficiency(Excel, Word, Powerpoint, etc...)</li>
@@ -81,7 +83,7 @@
             <section>
                 <!-- Table showing a variety of helpful tools i have used in coding. -->
                 <h2>Coding Tools</h2>
-                <hr>
+                
                 <table>
                     <thead>
                         <tr>
@@ -125,38 +127,41 @@
                     </tbody>
                 </table>
             </section>
-
+            
             <section>
                 <h2>Projects</h2>
-                <hr>
+                
                      <!-- Successful Projects -->
                     <div>
-                        <p><i>Accomplished projects will be posted as I progress through the Springboard course.</i></p>
-                        <p><i>For some self study projects please click on link bellow for my GitHub.</i></p>
+                        <p><i>Accomplished projects coming soon.</i></p>
+                        <p><i>For some past self study projects, please click on link bellow to GitHub.</i></p>
                     </div>
             </section> 
+            
             <section>
+                <!--My Hobbies-->
                 <h2>Hobbies</h2>
-                <hr>
-                <a href="hobbies.html"><img src="images/Hobbies.jpg" width="200px" alt="Hobbies Image"></a>
-
+                <div id="hobby">
+                    <a href="hobbies.html"><img src="images/Hobbies.jpg" width="200px" alt="Hobbies Image"></a>
+                </div>
             </section>
             
             <section>
+                <!--Contact Me-->
                 <h2>Contact Me</h2>
-                <hr>
+                
 
                 <form action="#">
 
                    <div>
                         <!-- created form and labels for users to input specific information. -->
                         <label for="name">Enter Name:</label>
-                        <input type="text" name="Name" placeholder="Momiji Saionji" id="name">
+                        <input type="text" name="Name" placeholder="John Doe" id="name">
                    </div>
 
                    <div>
                         <label for="email">Enter Email:</label>
-                        <input type="email" name="Email" placeholder="momijisai@example.com" id="email">
+                        <input type="email" name="Email" placeholder="johndoe@example.com" id="email">
                     </div> 
 
                     <div>
@@ -182,13 +187,14 @@
 
                     <div>
                         <!-- gives user option to select favorite programming language. -->
-                        <p>Which programming language do you prefer?</p>
+                        <p>Which programming language(s) did you start with?</p>
                     </div>
 
                     <div>
+                        <!--Labels showcasing differnet options for the user-->
                         <label>
                             <input type="radio" name="fav_language" value="JavaScript">
-                            JavaScript 📔 
+                            HTML, CSS, JavaScript 📔 
                         </label>
                     </div>
 
@@ -209,14 +215,14 @@
                     <div>
                         <label>
                             <input type="radio" name="fav_language" value="HTML">
-                            HTML
+                            C++ 👨‍💻
                         </label>
                     </div>
 
                     <div>
                         <label>
                             <input type="radio" name="fav_language" value="Rust">
-                            Rust
+                            Rust 💨
                         </label>
                     </div>
 
@@ -224,7 +230,7 @@
                         <!-- applied textbox for user to input and submit a message -->
                     
                         <label for="message">Message:</label>
-                             <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                             <textarea name="message" id="message" cols="30" rows="5"></textarea>
                     </div>
                     
                         <!-- buttons for user to select -->
@@ -234,12 +240,12 @@
                 </form>
             </section>
         </main> 
-
+        
         <footer>
             <section>  
             <div>
-                <h2>Follow me!</h2>
-                <hr>
+                <h2>Connect with me!</h2>
+                
                 <!-- Implemented "anchor tags" to out links to my GitHub and LinkedIn.  -->
                 <p><i>Looking forward to connect and discuss more on software development! You can find me on:</i></p>
                     <ul>
@@ -248,7 +254,8 @@
                         <li><a href="https://www.linkedin.com/in/oscar-car/">LinkedIn</a></li>
                     </ul> 
                 <p>Visit <a href="https://www.springboard.com/">Springboard</a> to learn more about my journey!</p>
-                <p>&copy; Oscar Carrillo 2024. All Rights Reserved. </p>
+                <!--Included Copyright Tag-->
+                <h5>&copy; Oscar Carrillo 2024. All Rights Reserved.</h5>
             </div>    
             </section>
         </footer>
